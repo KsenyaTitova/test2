@@ -108,6 +108,7 @@ public class CourierTest {
         courierCheck.failedMessage(loginResponse, "Недостаточно данных для входа", 400);
     }
 
+    //Тест падает, т.к. со стороны сервера получаем статус Service unavailable
     @Test
     @DisplayName("Проверка авторизации курьера без пароля")
     public void checkLoginCourierWithoutPasswordReturnCodeStatus400() {
